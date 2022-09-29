@@ -80,6 +80,7 @@ const Details = (props) => {
             <section>
                 <Button className='bg-primary mb-2 py-3 px-5 w-100 mt-5'>Activity Completed</Button>
             </section>
+
         </div>
     );
 };
