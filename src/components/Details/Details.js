@@ -1,10 +1,11 @@
 import React from 'react';
 import './Details.css'
+import { Button } from 'react-bootstrap';
 
 const Details = () => {
     return (
         <div className=''>
-            <div className='d-flex'>
+            <div className='d-flex mt-3'>
                 <div className='details'>
                     <img src="https://uplandstudio.ca/wp-content/uploads/2020/05/DSC_191120_102-3.jpg" alt="" />
                 </div>
@@ -15,7 +16,7 @@ const Details = () => {
             </div>
 
             <section>
-                <div className='my-4 d-flex justify-content-between'>
+                <div className='my-4 d-flex justify-content-between mx-auto border border-1'>
                     <div>
                         <h2>70kg</h2>
                         <p>Weight</p>
@@ -49,6 +50,28 @@ const Details = () => {
                         <button>50s</button>
                     </div>
                 </div>
+            </section>
+            <section>
+                <h5 className='fw-bold mt-5'>Exercise Details</h5>
+                <div className='d-flex justify-content-between mt-3'>
+                    <div>
+                        <h6 className='fw-bold'>Exercise time</h6>
+                    </div>
+                    <div>
+                        00 seconds
+                    </div>
+                </div>
+                <div className='d-flex justify-content-between mt-3'>
+                    <div>
+                        <h6 className='fw-bold'>Break time</h6>
+                    </div>
+                    <div>
+                        00 seconds
+                    </div>
+                </div>
+            </section>
+            <section>
+                <Button className='bg-primary mb-2 px-5 w-100 mt-5'>Activity Completed</Button>
             </section>
         </div>
     );
