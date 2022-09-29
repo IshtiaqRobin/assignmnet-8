@@ -17,7 +17,7 @@ const Questions = () => {
                 <p>Fetching data
                     Reading from local storage
                     Registering and deregistered event listeners.
-                    With useEffect, you invoke side effects from within functional components, which is an important concept to understand in the React Hooks era. Working with the side effects invoked by the useEffect Hook may seem cumbersome at first, but you’ll eventually learn everything makes a lot of sense.</p>
+                    With useEffect, you invoke side effects from within functional components, which is an important concept to understand in the React Hooks era. Working with the side effects invoked by the useEffect Hook may seem cumbersome at first, but you'll eventually learn everything makes a lot of sense.</p>
             </div>
         </div>
     );

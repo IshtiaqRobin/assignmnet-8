@@ -2,7 +2,14 @@ import React from 'react';
 import './Details.css'
 import { Button } from 'react-bootstrap';
 
-const Details = () => {
+const Details = (props) => {
+
+    const { cart } = props;
+    let time = 0;
+    for (const times of cart) {
+        time = time + times.time;
+    }
+
     return (
         <div className='exercise-details container-fluid'>
             <div className='d-flex mt-3'>
@@ -58,7 +65,7 @@ const Details = () => {
                         <h6 className='fw-bold '>Exercise time</h6>
                     </div>
                     <div>
-                        <span>00</span> seconds
+                        <span>{time}</span> seconds
                     </div>
                 </div>
                 <div className='d-flex justify-content-between border border-1 rounded-2 p-3 mt-3' style={{ backgroundColor: "rgb(218, 225, 227)" }}>

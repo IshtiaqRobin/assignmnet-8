@@ -16,8 +16,10 @@ const Exercises = () => {
 
     const handleAddToCart = (exercise) => {
         console.log(exercise);
-        const newCart = [...cart, exercise]
+        const newCart = [...cart, exercise];
+        setCart(newCart);
     }
+    console.log(cart.length);
 
     return (
         <div className='exercise-container container my-5'>
@@ -32,7 +34,7 @@ const Exercises = () => {
             </div>
 
             <div className='exercise-details-container container'>
-                <Details></Details>
+                <Details cart={cart}></Details>
             </div>
             <Questions></Questions>
 
