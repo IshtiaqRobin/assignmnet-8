@@ -1,12 +1,16 @@
-import './App.css';
+import React from 'react';
 import Exercises from './components/Exercises/Exercises';
+import Header from './components/Header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className='bg-white'>
+      <Header></Header>
       <Exercises></Exercises>
+
     </div>
   );
-}
+};
 
 export default App;

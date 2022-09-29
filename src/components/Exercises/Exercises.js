@@ -12,8 +12,8 @@ const Exercises = () => {
     }, [])
 
     return (
-        <div className='exercise-container'>
-            <div className='exercise-course-container'>
+        <div className='exercise-container container my-5'>
+            <div className='exercise-course-container container'>
                 {
                     exercisesLists.map(exercise => <ExerciseItems
                         key={exercise.id}
@@ -23,7 +23,7 @@ const Exercises = () => {
                 }
             </div>
             
-            <div className='exercise-details-container'>
+            <div className='exercise-details-container container'>
                 <h2>Exercise Details</h2>
             </div>
 
