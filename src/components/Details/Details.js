@@ -1,8 +1,14 @@
 import React from 'react';
 import './Details.css'
 import { Button } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Details = (props) => {
+
+    const notify = () => toast("Wow so easy!", {
+        position: "top-center"
+    });
 
     const { cart } = props;
     let time = 0;
@@ -78,7 +84,10 @@ const Details = (props) => {
                 </div>
             </section>
             <section>
-                <Button className='bg-primary mb-2 py-3 px-5 w-100 mt-5'>Activity Completed</Button>
+                <div>
+                    <Button onClick={notify} className='bg-primary mb-2 py-3 px-5 w-100 mt-5'>Activity Completed</Button>
+                    <ToastContainer></ToastContainer>
+                </div>
             </section>
 
         </div>
