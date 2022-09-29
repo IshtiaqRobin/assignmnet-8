@@ -3,7 +3,7 @@ import React from 'react';
 const Questions = () => {
     return (
         <div className='mt-5 container'>
-            <h2>Questions:</h2>
+            <span className='fs-2 fw-bold border rounded-2 px-2' style={{backgroundColor: "rgb(224, 155, 155)"}}>Questions:</span>
             <div>
                 <h3>How does react work?</h3>
                 <p>React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM.</p>
