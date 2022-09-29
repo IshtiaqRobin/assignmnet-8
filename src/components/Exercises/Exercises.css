@@ -1,16 +1,17 @@
-.exercise-container{
+.exercise-container {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 1fr;
+    /* grid-gap: 10px; */
 }
 
-.exercise-course-container{
+.exercise-course-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 18px;
     margin: auto;
 }
 
-.exercise-details-container{
+.exercise-details-container {
     width: auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -19,7 +20,50 @@
 
 
 
-            
- @media screen {
-    
- }
+@media screen and (max-width: 576px) {
+    .exercise-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .exercise-course-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 18px;
+        margin: auto;
+    }
+
+    .exercise-details {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .exercise-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .exercise-course-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 18px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .exercise-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .exercise-course-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 18px;
+        margin: auto;
+    }
+
+}

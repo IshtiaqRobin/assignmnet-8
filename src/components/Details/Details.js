@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const Details = () => {
     return (
-        <div className=''>
+        <div className='exercise-details container-fluid'>
             <div className='d-flex mt-3'>
                 <div className='details'>
                     <img src="https://uplandstudio.ca/wp-content/uploads/2020/05/DSC_191120_102-3.jpg" alt="" />

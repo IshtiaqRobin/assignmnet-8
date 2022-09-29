@@ -4,6 +4,9 @@
 }
 
 .break > div > button{
-    padding: 5px;
+    margin: 5px;
+    border: none;
+    background-color: white;
+    padding: 7px;
     border-radius: 50px;
 }
