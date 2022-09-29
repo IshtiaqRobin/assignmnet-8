@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Details.css'
 import { Button } from 'react-bootstrap';
 
 const Details = (props) => {
+    const [count, setCount] = useState([])
+    const AddToBreak = (props) => {
+        setCount(props);
+    }
 
     const { cart } = props;
     let time = 0;
@@ -42,19 +46,19 @@ const Details = (props) => {
                 <h5 className='fw-bold mt-5'>Add A Break</h5>
                 <div className='break d-flex justify-content-between border border-1 rounded-2 p-3 mt-3' style={{ backgroundColor: "rgb(218, 225, 227)" }}>
                     <div>
-                        <button>10s</button>
+                        <button onClick={() => { AddToBreak(10) }}>10s</button>
                     </div>
                     <div>
-                        <button>20s</button>
+                        <button onClick={() => { AddToBreak(20) }}>20s</button>
                     </div>
                     <div>
-                        <button>30s</button>
+                        <button onClick={() => { AddToBreak(30) }}>30s</button>
                     </div>
                     <div>
-                        <button>40s</button>
+                        <button onClick={() => { AddToBreak(40) }}>40s</button>
                     </div>
                     <div>
-                        <button>50s</button>
+                        <button onClick={() => { AddToBreak(50) }}>50s</button>
                     </div>
                 </div>
             </section>
@@ -73,7 +77,7 @@ const Details = (props) => {
                         <h6 className='fw-bold'>Break time</h6>
                     </div>
                     <div>
-                        <span>00</span> seconds
+                        <span>{count}</span> seconds
                     </div>
                 </div>
             </section>
