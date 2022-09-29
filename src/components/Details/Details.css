@@ -1,0 +1,9 @@
+.details img{
+    width: 70px;
+    border-radius: 30%;
+}
+
+.break > div > button{
+    padding: 5px;
+    border-radius: 50px;
+}

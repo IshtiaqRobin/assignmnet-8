@@ -7,7 +7,7 @@ const ExerciseItems = (props) => {
     const { name, img, age, time } = props.exercise;
     return (
         <div className='card' style={{ backgroundColor: "white" }}>
-            <div className='inner-card my-2'>
+            <div className='inner-card my-3'>
                 <img src={img} alt="" />
                 <h3>{name}</h3>
                 <p>For Age: {age}</p>

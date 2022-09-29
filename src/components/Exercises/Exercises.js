@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Details from '../Details/Details';
 import ExerciseItems from '../ExerciseItems/ExerciseItems';
 import './Exercises.css'
 
@@ -24,7 +25,7 @@ const Exercises = () => {
             </div>
             
             <div className='exercise-details-container container'>
-                <h2>Exercise Details</h2>
+                <Details></Details>
             </div>
 
         </div>
